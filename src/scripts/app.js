@@ -134,6 +134,18 @@ gsap.to('.contact__parallax__layer--front', {
     }
   });
 
+  // content anim
+  gsap.fromTo('.content--hidden', {
+    opacity: 0},
+    {opacity: 1,
+    scrollTrigger:{
+      trigger: '.projets',
+      start: '70% bottom',
+      end: 'bottom bottom',
+      scrub: true
+    }
+  });
+
 /////////////////////////////////////////////////////////          PROJETS          ////////////////////////////////////////////////////////
 
 gsap.to('.projets__liste', {
@@ -180,11 +192,31 @@ gsap.to('.projets__platform', {
   });
 
   // content anim
-gsap.fromTo('.content--hidden', {
+gsap.fromTo('.contact__text', {
   opacity: 0},
   {opacity: 1,
   scrollTrigger:{
-    trigger: '.projets',
+    trigger: '.contact',
+    start: '70% bottom',
+    end: 'bottom bottom',
+    scrub: true
+  }
+});
+gsap.fromTo('.contact__title', {
+  opacity: 0},
+  {opacity: 1,
+  scrollTrigger:{
+    trigger: '.contact',
+    start: '70% bottom',
+    end: 'bottom bottom',
+    scrub: true
+  }
+});
+gsap.fromTo('.contact__link', {
+  opacity: 0},
+  {opacity: 1,
+  scrollTrigger:{
+    trigger: '.contact',
     start: '70% bottom',
     end: 'bottom bottom',
     scrub: true
@@ -264,20 +296,6 @@ gsap.to('.compétences__parallax__layer--front', {
   });
 
   // bat anim
-  gsap.fromTo('.bat', {
-    x: '-100vw',
-    y: '-100vh'},
-    {x: 0,
-    y: 0,
-    scrollTrigger:{
-      trigger: '.compétences',
-      start: 'top bottom',
-      end: '80% bottom',
-      scrub: true
-    }, stagger:{
-      each: 0.1,
-    }
-  });
   gsap.fromTo('.bat', {
     x: 0,
     y: 0},

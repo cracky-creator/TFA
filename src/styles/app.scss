@@ -21,7 +21,7 @@
         height: 15vh;
         position: absolute;
         z-index: 100;
-        background-image: url(../../assets/images/gandalf_right.png);
+        background-image: url(../assets/images/gandalf_right.png);
         background-repeat: no-repeat;
         background-size: cover;
         top: 80vh;
@@ -584,6 +584,42 @@
 /////////////////////////////////////////////////////////          CONTACT          ////////////////////////////////////////////////////////
 .contact{
     background-color: $backgroundColor-contact;
+    color: $backgroundColor-ground;
+
+    // content
+    .content{
+        bottom: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        margin-bottom: $mt-25px;
+    }
+
+    &__text{
+        p{
+            text-align: center;
+        }
+    }
+    &__link{
+        display: inline-block;
+        a{
+            width: 15vh;
+            height: 13vh;
+            background-image: url(../assets/images/contact_bat_1.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: inline-block;
+            cursor: pointer;
+            animation: animBatContact 0.3s infinite linear;
+
+            // text indent
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
 
     // avatar text
     &__avatar-text-left{
@@ -614,8 +650,42 @@
     }
 }
 
-@media only screen and (min-width: 800px){
+@keyframes animBatContact {
+    0%{
+        background-image: url(../assets/images/contact_bat_1.png);
+      }
+      50%{
+        background-image: url(../assets/images/contact_bat_1.png);
+      }
+      51%{
+        background-image: url(../assets/images/contact_bat_2.png);
+      }
+      100%{
+        background-image: url(../assets/images/contact_bat_2.png);
+      }
+}
+
+@media only screen and (min-width: 700px){
     .contact{
+
+        // content
+        .content{
+            width: 70vw;
+            max-width: 700px;
+            bottom: 35vh;
+        }
+        &__title{
+            margin-bottom: $mt-28px;
+            font-size: $fs-h2;
+        }
+
+        &__text{
+            p{
+                margin-bottom: $mt-20px;
+                font-size: $fs-p;
+            }
+        }
+
         // parallax
         &__parallax{
 
