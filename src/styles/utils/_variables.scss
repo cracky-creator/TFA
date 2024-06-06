@@ -13,22 +13,6 @@ $fontColor: #fff;
 // border image color
 $borderColor: #633A2E;
 
-// fonts install
-@font-face {
-    font-family: 'Header font';
-    src: url(../../assets/fonts/ringbearer-font/RingbearerMedium-51mgZ.ttf);
-}
-
-@font-face {
-    font-family: 'forum';
-    src: url(../../assets/fonts/Forum/Forum-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'work sans';
-    src: url(../../assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
-}
-
 // fonts sizes
 $fs-mobile-h1: 72px;
 $fs-mobile-h2: 51px;

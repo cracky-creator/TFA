@@ -1,6 +1,56 @@
 @import 'utils/variables';
 @import 'components/type';
 
+// fonts install
+@font-face {
+    font-family: 'Header font';
+    src: url(../assets/fonts/ringbearer-font/RingbearerMedium-51mgZ.ttf);
+}
+
+@font-face {
+    font-family: 'forum';
+    src: url(../assets/fonts/Forum/Forum-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'work sans';
+    src: url(../assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+// avatar
+.avatar{
+    &-left{
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/images/gandalf-left.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+        
+        // text indent
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    &-right{
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/images/gandalf-right.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        // text indent
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+}
+
+// bat
+.bat{
+    background-image: url(../assets/images/bats.png);
+}
+
 /////////////////////////////////////////////////////////          HEADER          ////////////////////////////////////////////////////////
 .header{
     background-color: $backgroundColor-header;
@@ -21,7 +71,7 @@
         height: 15vh;
         position: absolute;
         z-index: 100;
-        background-image: url(../assets/images/gandalf_right.png);
+        background-image: url(../assets/images/gandalf-right.png);
         background-repeat: no-repeat;
         background-size: cover;
         top: 80vh;
@@ -44,6 +94,11 @@
         bottom: 71vh;
         right: 20vh;
         border-bottom-right-radius: 0;
+    }
+
+    // platform
+    .platform-right{
+        background-image: url(../assets/images/plateforme_right.png);
     }
 
     // parallax
@@ -108,6 +163,7 @@
 .présentation{
     background-color: $backgroundColor-presentation;
     position: relative;
+    text-shadow: 0px 0px 5px black;
 
     // content
     .content{
@@ -122,6 +178,11 @@
         bottom: 71vh;
         left: 20vh;
         border-bottom-left-radius: 0;
+    }
+
+    // platform
+    .platform-left{
+        background-image: url(../assets/images/plateforme.png);
     }
 
     // parallax
@@ -216,34 +277,124 @@
         align-items: center;
         margin-bottom: $mt-18px;
 
+        @keyframes batAnim {
+            0%{
+              background-image: url(../assets/images/bats.png);
+            }
+            50%{
+              background-image: url(../assets/images/bats.png);
+            }
+            51%{
+              background-image: url(../assets/images/bats_2.png);
+            }
+            100%{
+              background-image: url(../assets/images/bats_2.png);
+            }
+          }
+
         &:nth-child(1){
             .compétence__logo{
                 background-image: url(../assets/images/logo_html.png);
                 animation: htmlLogoAnim 0.3s infinite linear;
+
+                  @keyframes htmlLogoAnim {
+                    0%{
+                      background-image: url(../assets/images/logo_html.png);
+                    }
+                    50%{
+                      background-image: url(../assets/images/logo_html.png);
+                    }
+                    51%{
+                      background-image: url(../assets/images/logo_html_2.png);
+                    }
+                    100%{
+                      background-image: url(../assets/images/logo_html_2.png);
+                    }
+                  }
             }
         }
         &:nth-child(2){
             .compétence__logo{
                 background-image: url(../assets/images/logo_css.png);
                 animation: cssLogoAnim 0.3s infinite linear;
+
+                @keyframes cssLogoAnim {
+                    0%{
+                      background-image: url(../assets/images/logo_css.png);
+                    }
+                    50%{
+                      background-image: url(../assets/images/logo_css.png);
+                    }
+                    51%{
+                      background-image: url(../assets/images/logo__css_2.png);
+                    }
+                    100%{
+                      background-image: url(../assets/images/logo__css_2.png);
+                    }
+                  }
             }
         }
         &:nth-child(3){
             .compétence__logo{
                 background-image: url(../assets/images/logo_js.png);
                 animation: jsLogoAnim 0.3s infinite linear;
+
+                @keyframes jsLogoAnim {
+                    0%{
+                      background-image: url(../assets/images/logo_js.png);
+                    }
+                    50%{
+                      background-image: url(../assets/images/logo_js.png);
+                    }
+                    51%{
+                      background-image: url(../assets/images/logo_js_2.png);
+                    }
+                    100%{
+                      background-image: url(../assets/images/logo_js_2.png);
+                    }
+                  }
             }
         }
         &:nth-child(4){
             .compétence__logo{
                 background-image: url(../assets/images/logo_illustrator.png);
                 animation: illustratorLogoAnim 0.3s infinite linear;
+
+                @keyframes illustratorLogoAnim {
+                    0%{
+                      background-image: url(../assets/images/logo_illustrator.png);
+                    }
+                    50%{
+                      background-image: url(../assets/images/logo_illustrator.png);
+                    }
+                    51%{
+                      background-image: url(../assets/images/logo_illustrator_2.png);
+                    }
+                    100%{
+                      background-image: url(../assets/images/logo_illustrator_2.png);
+                    }
+                  }
             }
         }
         &:nth-child(5){
             .compétence__logo{
                 background-image: url(../assets/images/logo_figma.png);
                 animation: figmaLogoAnim 0.3s infinite linear;
+
+                @keyframes figmaLogoAnim {
+                    0%{
+                      background-image: url(../assets/images/logo_figma.png);
+                    }
+                    50%{
+                      background-image: url(../assets/images/logo_figma.png);
+                    }
+                    51%{
+                      background-image: url(../assets/images/logo_figma_2.png);
+                    }
+                    100%{
+                      background-image: url(../assets/images/logo_figma_2.png);
+                    }
+                  }
             }
         }
     }
@@ -253,6 +404,11 @@
         bottom: 71vh;
         right: 20vh;
         border-bottom-right-radius: 0;
+    }
+
+    // platform
+    .platform-right{
+        background-image: url(../assets/images/plateforme_right.png);
     }
 
     // panneau
@@ -415,7 +571,7 @@
         height: 15vh;
         position: absolute;
         z-index: 100;
-        background-image: url(../assets/images/gandalf_right.png);
+        background-image: url(../assets/images/gandalf-right.png);
         background-repeat: no-repeat;
         background-size: cover;
         top: 80vh;
@@ -433,6 +589,11 @@
         bottom: 71vh;
         right: 20vh;
         border-bottom-right-radius: 0;
+    }
+
+    // platform
+    .platform-right{
+        background-image: url(../assets/images/plateforme_right.png);
     }
 
     // projets link
@@ -585,6 +746,7 @@
 .contact{
     background-color: $backgroundColor-contact;
     color: $backgroundColor-ground;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
 
     // content
     .content{
@@ -626,6 +788,11 @@
         bottom: 71vh;
         left: 20vh;
         border-bottom-left-radius: 0;
+    }
+
+    // platform
+    .platform-left{
+        background-image: url(../assets/images/plateforme.png);
     }
 
     // parallax

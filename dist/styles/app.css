@@ -1,16 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Header font";
-  src: url(../../assets/fonts/ringbearer-font/RingbearerMedium-51mgZ.ttf);
-}
-@font-face {
-  font-family: "forum";
-  src: url(../../assets/fonts/Forum/Forum-Regular.ttf);
-}
-@font-face {
-  font-family: "work sans";
-  src: url(../../assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
-}
 body, html {
   height: 100%;
 }
@@ -60,7 +48,6 @@ body {
 .platform-left {
   width: 20vh;
   height: 5vh;
-  background-image: url(../../assets/images/plateforme.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -75,7 +62,6 @@ body {
 .platform-right {
   width: 20vh;
   height: 5vh;
-  background-image: url(../../assets/images/plateforme_right.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -100,15 +86,11 @@ ul li {
   height: 15vh;
   position: absolute;
   z-index: 100;
-  background-image: url(../../assets/images/gandalf_right.png);
   background-repeat: no-repeat;
   background-size: cover;
   top: 680vh;
   right: calc(50vw - 5vh);
   opacity: 1;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .avatar-text {
@@ -121,6 +103,7 @@ ul li {
   margin: 0;
   background-color: #585958;
   color: #fff;
+  text-shadow: none;
   border-radius: 25px;
   display: none;
 }
@@ -161,6 +144,7 @@ h1 {
   font-family: "Header font";
   font-size: 72px;
   margin-top: 0;
+  text-shadow: 0px 0px 5px black;
 }
 
 h2 {
@@ -177,12 +161,12 @@ h3 {
   font-family: "forum";
   font-size: 25px;
   margin-bottom: 25px;
+  text-shadow: 0px 0px 5px black;
 }
 
 .bat {
   width: 15vw;
   height: 9vw;
-  background-image: url(../../assets/images/bats.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-animation: batAnim 0.3s infinite linear;
@@ -203,203 +187,6 @@ h3 {
   display: flex;
 }
 
-@-webkit-keyframes batAnim {
-  0% {
-    background-image: url(../../assets/images/bats.png);
-  }
-  50% {
-    background-image: url(../../assets/images/bats.png);
-  }
-  51% {
-    background-image: url(../../assets/images/bats_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/bats_2.png);
-  }
-}
-
-@keyframes batAnim {
-  0% {
-    background-image: url(../../assets/images/bats.png);
-  }
-  50% {
-    background-image: url(../../assets/images/bats.png);
-  }
-  51% {
-    background-image: url(../../assets/images/bats_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/bats_2.png);
-  }
-}
-@-webkit-keyframes htmlLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_html.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_html.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_html_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_html_2.png);
-  }
-}
-@keyframes htmlLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_html.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_html.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_html_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_html_2.png);
-  }
-}
-@-webkit-keyframes cssLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_css.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_css.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo__css_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo__css_2.png);
-  }
-}
-@keyframes cssLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_css.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_css.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo__css_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo__css_2.png);
-  }
-}
-@-webkit-keyframes jsLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_js.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_js.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_js_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_js_2.png);
-  }
-}
-@keyframes jsLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_js.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_js.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_js_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_js_2.png);
-  }
-}
-@-webkit-keyframes illustratorLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_illustrator.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_illustrator.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_illustrator_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_illustrator_2.png);
-  }
-}
-@keyframes illustratorLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_illustrator.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_illustrator.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_illustrator_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_illustrator_2.png);
-  }
-}
-@-webkit-keyframes photoshopLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_photoshop.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_photoshop.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_photoshop_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_photoshop_2.png);
-  }
-}
-@keyframes photoshopLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_photoshop.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_photoshop.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_photoshop_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_photoshop_2.png);
-  }
-}
-@-webkit-keyframes figmaLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_figma.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_figma.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_figma_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_figma_2.png);
-  }
-}
-@keyframes figmaLogoAnim {
-  0% {
-    background-image: url(../../assets/images/logo_figma.png);
-  }
-  50% {
-    background-image: url(../../assets/images/logo_figma.png);
-  }
-  51% {
-    background-image: url(../../assets/images/logo_figma_2.png);
-  }
-  100% {
-    background-image: url(../../assets/images/logo_figma_2.png);
-  }
-}
 .panneau {
   width: 10vh;
   height: 15vh;
@@ -413,6 +200,44 @@ h3 {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@font-face {
+  font-family: "Header font";
+  src: url(../assets/fonts/ringbearer-font/RingbearerMedium-51mgZ.ttf);
+}
+@font-face {
+  font-family: "forum";
+  src: url(../assets/fonts/Forum/Forum-Regular.ttf);
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+.avatar-left {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/images/gandalf-left.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.avatar-right {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/images/gandalf-right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bat {
+  background-image: url(../assets/images/bats.png);
 }
 
 .header {
@@ -430,7 +255,7 @@ h3 {
   height: 15vh;
   position: absolute;
   z-index: 100;
-  background-image: url(../assets/images/gandalf_right.png);
+  background-image: url(../assets/images/gandalf-right.png);
   background-repeat: no-repeat;
   background-size: cover;
   top: 80vh;
@@ -449,6 +274,9 @@ h3 {
   bottom: 71vh;
   right: 20vh;
   border-bottom-right-radius: 0;
+}
+.header .platform-right {
+  background-image: url(../assets/images/plateforme_right.png);
 }
 .header__parallax__layer--front {
   background-image: url(../assets/images/mobile/parallax_front.png);
@@ -495,6 +323,7 @@ h3 {
 .présentation {
   background-color: #4373A5;
   position: relative;
+  text-shadow: 0px 0px 5px black;
 }
 .présentation .content {
   bottom: 35vh;
@@ -506,6 +335,9 @@ h3 {
   bottom: 71vh;
   left: 20vh;
   border-bottom-left-radius: 0;
+}
+.présentation .platform-left {
+  background-image: url(../assets/images/plateforme.png);
 }
 .présentation__parallax__layer--front {
   background-image: url(../assets/images/mobile/parallax_front.png);
@@ -576,35 +408,206 @@ h3 {
   align-items: center;
   margin-bottom: 18px;
 }
+@-webkit-keyframes batAnim {
+  0% {
+    background-image: url(../assets/images/bats.png);
+  }
+  50% {
+    background-image: url(../assets/images/bats.png);
+  }
+  51% {
+    background-image: url(../assets/images/bats_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/bats_2.png);
+  }
+}
+@keyframes batAnim {
+  0% {
+    background-image: url(../assets/images/bats.png);
+  }
+  50% {
+    background-image: url(../assets/images/bats.png);
+  }
+  51% {
+    background-image: url(../assets/images/bats_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/bats_2.png);
+  }
+}
 .compétences .compétence:nth-child(1) .compétence__logo {
   background-image: url(../assets/images/logo_html.png);
   -webkit-animation: htmlLogoAnim 0.3s infinite linear;
           animation: htmlLogoAnim 0.3s infinite linear;
+}
+@-webkit-keyframes htmlLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_html.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_html.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo_html_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo_html_2.png);
+  }
+}
+@keyframes htmlLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_html.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_html.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo_html_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo_html_2.png);
+  }
 }
 .compétences .compétence:nth-child(2) .compétence__logo {
   background-image: url(../assets/images/logo_css.png);
   -webkit-animation: cssLogoAnim 0.3s infinite linear;
           animation: cssLogoAnim 0.3s infinite linear;
 }
+@-webkit-keyframes cssLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_css.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_css.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo__css_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo__css_2.png);
+  }
+}
+@keyframes cssLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_css.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_css.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo__css_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo__css_2.png);
+  }
+}
 .compétences .compétence:nth-child(3) .compétence__logo {
   background-image: url(../assets/images/logo_js.png);
   -webkit-animation: jsLogoAnim 0.3s infinite linear;
           animation: jsLogoAnim 0.3s infinite linear;
+}
+@-webkit-keyframes jsLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_js.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_js.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo_js_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo_js_2.png);
+  }
+}
+@keyframes jsLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_js.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_js.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo_js_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo_js_2.png);
+  }
 }
 .compétences .compétence:nth-child(4) .compétence__logo {
   background-image: url(../assets/images/logo_illustrator.png);
   -webkit-animation: illustratorLogoAnim 0.3s infinite linear;
           animation: illustratorLogoAnim 0.3s infinite linear;
 }
+@-webkit-keyframes illustratorLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_illustrator.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_illustrator.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo_illustrator_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo_illustrator_2.png);
+  }
+}
+@keyframes illustratorLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_illustrator.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_illustrator.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo_illustrator_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo_illustrator_2.png);
+  }
+}
 .compétences .compétence:nth-child(5) .compétence__logo {
   background-image: url(../assets/images/logo_figma.png);
   -webkit-animation: figmaLogoAnim 0.3s infinite linear;
           animation: figmaLogoAnim 0.3s infinite linear;
 }
+@-webkit-keyframes figmaLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_figma.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_figma.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo_figma_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo_figma_2.png);
+  }
+}
+@keyframes figmaLogoAnim {
+  0% {
+    background-image: url(../assets/images/logo_figma.png);
+  }
+  50% {
+    background-image: url(../assets/images/logo_figma.png);
+  }
+  51% {
+    background-image: url(../assets/images/logo_figma_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/logo_figma_2.png);
+  }
+}
 .compétences__avatar-text-right {
   bottom: 71vh;
   right: 20vh;
   border-bottom-right-radius: 0;
+}
+.compétences .platform-right {
+  background-image: url(../assets/images/plateforme_right.png);
 }
 .compétences .panneau {
   background-image: url(../assets/images/panneau_skills.png);
@@ -724,7 +727,7 @@ h3 {
   height: 15vh;
   position: absolute;
   z-index: 100;
-  background-image: url(../assets/images/gandalf_right.png);
+  background-image: url(../assets/images/gandalf-right.png);
   background-repeat: no-repeat;
   background-size: cover;
   top: 80vh;
@@ -738,6 +741,9 @@ h3 {
   bottom: 71vh;
   right: 20vh;
   border-bottom-right-radius: 0;
+}
+.projets .platform-right {
+  background-image: url(../assets/images/plateforme_right.png);
 }
 .projets__link {
   background-image: url(../assets/images/projets__porte.png);
@@ -859,6 +865,7 @@ h3 {
 .contact {
   background-color: #FBE9E4;
   color: black;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 .contact .content {
   bottom: 30vh;
@@ -893,6 +900,9 @@ h3 {
   bottom: 71vh;
   left: 20vh;
   border-bottom-left-radius: 0;
+}
+.contact .platform-left {
+  background-image: url(../assets/images/plateforme.png);
 }
 .contact__parallax__layer--front {
   background-image: url(../assets/images/mobile/parallax_front.png);

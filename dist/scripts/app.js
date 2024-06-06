@@ -523,7 +523,6 @@ tlAvatar.to('.avatar', {
   right: 'calc(50vw - 5vh)',
   display: 'none',
   opacity: 0,
-  backgroundImage: 'url(../../assets/images/gandalf_right.png)',
   scrollTrigger: {
     trigger: '.header',
     start: 'bottom bottom',
@@ -558,10 +557,20 @@ tlAvatar.to('.avatar', {
     end: 'bottom bottom',
     scrub: true
   }
-}).fromTo('.avatar', {
-  backgroundImage: 'url(../../assets/images/gandalf_left.png)'
+}).fromTo('.avatar-right', {
+  display: 'none'
 }, {
-  backgroundImage: 'url(../../assets/images/gandalf_right.png)',
+  display: 'block',
+  scrollTrigger: {
+    trigger: '.header',
+    start: 'center bottom',
+    end: 'center bottom',
+    scrub: true
+  }
+}).fromTo('.avatar-left', {
+  display: 'block'
+}, {
+  display: 'none',
   scrollTrigger: {
     trigger: '.header',
     start: 'center bottom',
@@ -592,10 +601,20 @@ tlAvatar.to('.avatar', {
     end: 'bottom bottom',
     scrub: true
   }
-}).fromTo('.avatar', {
-  backgroundImage: 'url(../../assets/images/gandalf_right.png)'
+}).fromTo('.avatar-right', {
+  display: 'block'
 }, {
-  backgroundImage: 'url(../../assets/images/gandalf_left.png)',
+  display: 'none',
+  scrollTrigger: {
+    trigger: '.présentation',
+    start: 'center bottom',
+    end: 'center bottom',
+    scrub: true
+  }
+}).fromTo('.avatar-left', {
+  display: 'none'
+}, {
+  display: 'block',
   scrollTrigger: {
     trigger: '.présentation',
     start: 'center bottom',
@@ -626,10 +645,20 @@ tlAvatar.to('.avatar', {
     end: 'bottom bottom',
     scrub: true
   }
-}).fromTo('.avatar', {
-  backgroundImage: 'url(../../assets/images/gandalf_left.png)'
+}).fromTo('.avatar-right', {
+  display: 'none'
 }, {
-  backgroundImage: 'url(../../assets/images/gandalf_right.png)',
+  display: 'block',
+  scrollTrigger: {
+    trigger: '.compétences',
+    start: 'center bottom',
+    end: 'center bottom',
+    scrub: true
+  }
+}).fromTo('.avatar-left', {
+  display: 'block'
+}, {
+  display: 'none',
   scrollTrigger: {
     trigger: '.compétences',
     start: 'center bottom',
@@ -648,16 +677,34 @@ tlAvatar.to('.avatar', {
     end: 'center bottom',
     scrub: true
   }
+}).fromTo('.avatar-left', {
+  display: 'none'
+}, {
+  display: 'block',
+  scrollTrigger: {
+    trigger: '.compétences',
+    start: 'top bottom',
+    end: 'top bottom',
+    scrub: true
+  }
+}).fromTo('.avatar-right', {
+  display: 'block'
+}, {
+  display: 'none',
+  scrollTrigger: {
+    trigger: '.compétences',
+    start: 'top bottom',
+    end: 'top bottom',
+    scrub: true
+  }
 }).fromTo('.avatar', {
   top: '280vh',
   right: 'calc(50vw - 5vh)',
-  opacity: 0,
-  backgroundImage: 'url(../../assets/images/gandalf_right.png)'
+  opacity: 0
 }, {
   top: '380vh',
   right: 'calc(50vw - 5vh)',
   opacity: 1,
-  backgroundImage: 'url(../../assets/images/gandalf_left.png)',
   scrollTrigger: {
     trigger: '.compétences',
     start: 'top bottom',
@@ -706,10 +753,20 @@ tlAvatar.to('.avatar', {
     end: 'bottom bottom',
     scrub: true
   }
-}).fromTo('.avatar', {
-  backgroundImage: 'url(../../assets/images/gandalf_left.png)'
+}).fromTo('.avatar-right', {
+  display: 'none'
 }, {
-  backgroundImage: 'url(../../assets/images/gandalf_right.png)',
+  display: 'block',
+  scrollTrigger: {
+    trigger: '.projets',
+    start: 'center bottom',
+    end: 'center bottom',
+    scrub: true
+  }
+}).fromTo('.avatar-left', {
+  display: 'block'
+}, {
+  display: 'none',
   scrollTrigger: {
     trigger: '.projets',
     start: 'center bottom',
@@ -740,10 +797,20 @@ tlAvatar.to('.avatar', {
     end: 'bottom bottom',
     scrub: true
   }
-}).fromTo('.avatar', {
-  backgroundImage: 'url(../../assets/images/gandalf_right.png)'
+}).fromTo('.avatar-left', {
+  display: 'none'
 }, {
-  backgroundImage: 'url(../../assets/images/gandalf_left.png)',
+  display: 'block',
+  scrollTrigger: {
+    trigger: '.contact',
+    start: 'center bottom',
+    end: 'center bottom',
+    scrub: true
+  }
+}).fromTo('.avatar-right', {
+  display: 'block'
+}, {
+  display: 'none',
   scrollTrigger: {
     trigger: '.contact',
     start: 'center bottom',
