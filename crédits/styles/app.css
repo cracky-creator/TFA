@@ -1,0 +1,154 @@
+@charset "UTF-8";
+body, html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0px 0px 5px black;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 140%;
+  font-family: "work sans";
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+a {
+  line-height: 140%;
+  font-family: "work sans";
+  font-size: 18px;
+  margin: 0;
+  text-decoration: none;
+  margin-bottom: 72px;
+  margin-top: 72px;
+}
+
+h1 {
+  line-height: 140%;
+  font-family: "Header font";
+  font-size: 72px;
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
+h2 {
+  line-height: 140%;
+  font-family: "forum";
+  font-size: 51px;
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+h3 {
+  line-height: 140%;
+  font-family: "forum";
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+@media only screen and (min-width: 700px) {
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-size: 20px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  h1 {
+    font-size: 80px;
+    margin-bottom: 80px;
+  }
+
+  h2 {
+    font-size: 56px;
+    margin-bottom: 56px;
+  }
+
+  h3 {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  ul {
+    margin-bottom: 56px;
+  }
+}
+@font-face {
+  font-family: "Header font";
+  src: url(../assets/fonts/ringbearer-font/RingbearerMedium-51mgZ.ttf);
+}
+@font-face {
+  font-family: "forum";
+  src: url(../assets/fonts/Forum/Forum-Regular.ttf);
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+body {
+  background-image: url(../assets/images/mobile/crédits_bg.png);
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    background-image: url(../assets/images/tab/crédits_bg.png);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: url(../assets/images/crédits_bg.png);
+  }
+}
+a {
+  background-image: url(../assets/images/crédits_nuage.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+a:active {
+  font-weight: bold;
+}
+a p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=app.css.map*/
