@@ -1,0 +1,247 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #4373A5;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+section {
+  position: relative;
+  z-index: 100;
+}
+
+.content {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: 0px 0px 5px black;
+}
+
+p {
+  line-height: 140%;
+  font-family: "work sans";
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+a {
+  line-height: 140%;
+  font-family: "work sans";
+  font-size: 18px;
+  margin: 0;
+  text-decoration: none;
+}
+
+h1 {
+  line-height: 140%;
+  font-family: "forum";
+  font-size: 51px;
+  margin: 0;
+  margin-bottom: 51px;
+  margin-top: 51px;
+}
+
+@media only screen and (min-width: 700px) {
+  .content {
+    width: 80%;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 56px;
+    margin-bottom: 56px;
+    margin-top: 56px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .content {
+    margin-left: 20vh;
+  }
+}
+@font-face {
+  font-family: "Header font";
+  src: url(../assets/fonts/ringbearer-font/RingbearerMedium-51mgZ.ttf);
+}
+@font-face {
+  font-family: "forum";
+  src: url(../assets/fonts/Forum/Forum-Regular.ttf);
+}
+@font-face {
+  font-family: "work sans";
+  src: url(../assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+.introduction {
+  position: relative;
+  z-index: 100;
+}
+.introduction a {
+  background-image: url(../assets/images/stage_nuage.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  color: #fff;
+  z-index: 1000;
+}
+.introduction a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.introduction a:active {
+  font-weight: bold;
+}
+
+.text {
+  margin-top: 51px;
+}
+.text p {
+  margin-bottom: 30vh;
+}
+.text p:last-child {
+  margin-bottom: 50vh;
+}
+
+.assets {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  margin-top: 0;
+  z-index: 1;
+}
+.assets__anim__layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(100vh);
+}
+.assets__anim__layer:nth-child(1) {
+  background-image: url(../assets/images/background_plan_1.png);
+  z-index: 15;
+}
+.assets__anim__layer:nth-child(2) {
+  background-image: url(../assets/images/background_plan_2.png);
+  z-index: 10;
+}
+.assets__anim__layer:nth-child(3) {
+  background-image: url(../assets/images/background_plan_3.png);
+  z-index: 5;
+}
+.assets__anim__layer:nth-child(4) {
+  width: 10vh;
+  height: 15vh;
+  bottom: 1vh;
+  right: calc(50vw - 5vh);
+  background-image: url(../assets/images/gandalf_right.png);
+  transform: translate(0);
+  opacity: 0;
+  z-index: 20;
+}
+.assets__anim__layer:nth-child(5) {
+  z-index: 25;
+  -webkit-animation: batAnim 0.3s infinite linear;
+          animation: batAnim 0.3s infinite linear;
+  transform: translate(100vw, -100vh);
+  width: 15vw;
+  height: 9vw;
+  max-width: 85px;
+  max-height: 54px;
+  right: 20vw;
+  bottom: 40vh;
+}
+.assets__anim__layer:nth-child(6) {
+  z-index: 25;
+  -webkit-animation: batAnim 0.3s infinite linear;
+          animation: batAnim 0.3s infinite linear;
+  transform: translate(100vw, -100vh);
+  width: 15vw;
+  height: 9vw;
+  max-width: 85px;
+  max-height: 54px;
+  right: 30vw;
+  bottom: 45vh;
+}
+.assets__anim__layer:nth-child(7) {
+  z-index: 25;
+  -webkit-animation: batAnim 0.3s infinite linear;
+          animation: batAnim 0.3s infinite linear;
+  transform: translate(100vw, -100vh);
+  width: 15vw;
+  height: 9vw;
+  max-width: 85px;
+  max-height: 54px;
+  right: 15vw;
+  bottom: 50vh;
+}
+.assets__anim__layer:nth-child(8) {
+  background-image: url(../assets/images/stage_nuage.png);
+  width: 30vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 130px;
+  top: 5vh;
+  right: 10vw;
+  z-index: 30;
+  opacity: 0;
+  transform: translate(0);
+}
+
+@-webkit-keyframes batAnim {
+  0% {
+    background-image: url(../assets/images/bats.png);
+  }
+  50% {
+    background-image: url(../assets/images/bats.png);
+  }
+  51% {
+    background-image: url(../assets/images/bats_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/bats_2.png);
+  }
+}
+
+@keyframes batAnim {
+  0% {
+    background-image: url(../assets/images/bats.png);
+  }
+  50% {
+    background-image: url(../assets/images/bats.png);
+  }
+  51% {
+    background-image: url(../assets/images/bats_2.png);
+  }
+  100% {
+    background-image: url(../assets/images/bats_2.png);
+  }
+}
+
+/*# sourceMappingURL=app.css.map*/
